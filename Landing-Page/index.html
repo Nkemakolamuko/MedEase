@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="h-full">
+    <header class="flex justify-between items-center px-[50px] p-2 border-b-2">
+        <img src="assets/remove-bg.png" alt="" class="w-[100px]">
+        <nav class="w-[70%] text-2xl">
+            <ul class="flex justify-around">
+                <li class="text-[#0085FF] underline"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../Contact/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button class="w-[120px] h-[60px] rounded-[5px] text-xl text-white bg-[#0085FF]"><a href="login.html">Login</a></button>
+        </div>
+    </header>
+
+    <section class="flex justify-between items-center w-[95%] ml-20 h-full">
+        <div class="w-[45%] flex flex-col items-start">
+            <h1 class="text-3xl font-bold">
+                Med<span class="text-red-500">Ease</span><br>
+                Your Health Care Companion
+            </h1>
+            <p class="text-2xl text-gray-500 my-[30px]">MedEase is your partner in achieving seamless 
+                medication adherence. With MedEase, you take 
+                control of your well-being effortlessly and embark
+                on a journey of improved health management.</p>
+            <button class="text-2xl text-white bg-[#0085FF] rounded-[10px] w-[200px] h-[60px]">Learn more</button>
+        </div>
+        <!-- <div class="w-[50%] h-full border border-red-500"> -->
+            <img src="assets/hero.png" alt="" class="w-[55%] h-full">
+        <!-- </div> -->
+    </section>
+
+    <section class="bg-gray-100">
+        <div class="w-[90%] mx-auto pt-[50px]">
+            <div class="flex items-center justify-between">
+                <p class="text-3xl font-bold">Explore Features</p>
+                <div class="w-[100px] flex justify-between items-center items-center">
+                    <ion-icon onclick="left()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-back-circle-outline"></ion-icon>
+                    <ion-icon onclick="right()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-forward-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div id="features" class="h-[300px] mx-auto overflow-x-scroll no-scrollbar scroll-smooth flex items-center gap-[70px] scrollbar-hide">
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/user.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">User Profile</p>
+                    <p class="text-[18px] text-gray-500">User can view and Edit their profile</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/add reminder.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Medication</p>
+                    <p class="text-[18px] text-gray-500">We keep your medications for you</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/medication-bottle-2-64 2.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Refill Status</p>
+                    <p class="text-[18px] text-gray-500">Get notified when pills are running low</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/heartbeat_medical_healthcare-64 2.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Health Insight</p>
+                    <p class="text-[18px] text-gray-500">Know more about your medications</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/Alarm.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Reminders</p>
+                    <p class="text-[18px] text-gray-500">Set Customized Reminder</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/adheherence.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Adherence Status</p>
+                    <p class="text-[18px] text-gray-500">Keep track of your medication usage</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/alarm_beacon_emergency_help_light-64 2.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Emergency</p>
+                    <p class="text-[18px] text-gray-500">For Emergency purposes</p>
+                </div>
+                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <img src="assets/ic_settings_48px-64 2.png" alt="" class="w-[40px]">
+                    <p class="text-2xl font-bold">Settings</p>
+                    <p class="text-[18px] text-gray-500">Customize your profile</p>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <div class="w-[45%]">
+                    <img src="assets/docphone.png" alt="" >
+                </div>
+                
+                <div class="w-[40%] h-[450px] flex flex-col justify-between">
+                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <img src="assets/mission_1628441 2.png" alt="" class="w-[50px] h-[50px]">
+                        <div class="ml-[25px]">
+                            <p class="text-2xl font-bold">Our Mission</p>
+                            <p class="text-gray-500 text-xl mt-2">Empowering Medication Management for healthier lives.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <img src="assets/teamwork_8779197 1.png" alt="" class="w-[50px] h-[50px]">
+                        <div class="ml-[25px]">
+                            <p class="text-2xl font-bold">Who We Are</p>
+                            <p class="text-gray-500 text-xl mt-2">We’re your partner in achieving seamless health management.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <img src="assets/Vector.png" alt="" class="w-[50px] h-[50px]">
+                        <div class="ml-[25px]">
+                            <p class="text-2xl font-bold">Our Vision</p>
+                            <p class="text-gray-500 text-xl mt-2">Innovate  Medication Management for healthier lives.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-between items-center w-[90%] mx-auto h-screen">
+        <div class="w-[50%] flex flex-col items-start">
+            <h1 class="text-4xl font-bold">
+                Smooth Service and effortless medication management.
+            </h1>
+            <p class="text-2xl text-gray-500 my-[30px]">Discover our medication management app for a seamless experience. Effortlessly organize, track, and receive prescriptions. Simplify your health journey with smooth service and easy medication management.</p>
+            <button class="text-2xl text-white bg-[#0085FF] rounded-[10px] w-[200px] h-[60px]">Learn more</button>
+        </div>
+        <div class="w-[40%] h-[400px] relative">
+            <img src="assets/docpatient.png" alt="" class="absolute bottom-0 w-1/2 h-[60%]">
+            <img src="assets/drugs.png" alt="" class="absolute bottom-0 right-0 w-[45%] h-[25%]">
+            <img src="assets/gadget.png" alt="" class="absolute top-0 right-0 w-[70%] h-[70%] z-[-1]">
+        </div>
+    </section>
+
+    <section class="bg-gray-100 pb-[100px]">
+        <div class="w-[90%] mx-auto pt-[50px]">
+            <div class="flex items-center justify-between">
+                <p class="text-3xl font-bold">Follow the latest articles & news</p>
+                <div class="w-[100px] flex justify-between items-center items-center">
+                    <ion-icon onclick="slideLeft()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-back-circle-outline"></ion-icon>
+                    <ion-icon onclick="slideRight()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-forward-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div id="article" class="h-[600px] mx-auto overflow-x-scroll no-scrollbar scroll-smooth flex items-center gap-[80px]">
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/capsules.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/apple.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
+                    <img src="assets/hands.png" alt="">
+                    <div class="p-4 flex flex-col justify-between h-full">
+                        <p class="text-[#0085FF]">7 June, 2023</p>
+                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
+                        <div class="flex items-center">
+                            <p class="text-[#0085FF]">READ MORE</p>
+                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex gap-[20px] my-[70px] w-[90%] mx-auto">
+        <div class="w-1/2">
+            <p class="text-2xl font-bold mb-5">About Us</p>
+            <p class="text-[14px] text-gray-500">MedEase is dedicated to simplifying your medication journey, empowering you to take control of your health and well-being with our user-friendly and comprehensive medication management solutions</p>
+        </div>
+        <div class="w-[50%] pl-[50px]">
+            <p class="text-2xl font-bold mb-5">Useful Links</p>
+            <div class="text-[14px] text-gray-500">
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Mission</li>
+                    <li>How MedEase Works</li>
+                    <li>Our Team</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-1/2">
+            <p class="text-2xl font-bold mb-5">More</p>
+            <p class="text-[14px] text-gray-500">Discover additional features and tools to streamline your medication routine further, making your health a top priority.</p>
+        </div>
+        <div class="w-[30%] pl-[50px]">
+            <p class="text-2xl font-bold mb-5">NewsLetter</p>
+            <input type="email" placeholder="Enter your email" class="border text-[10px] h-[30px] p-4">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
