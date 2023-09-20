@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="shortcut icon" href="../Landing-Page/assets/remove-bg.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <main class="flex">
-        <div><img src="../Landing-Page/assets/Frame 4.png" alt="" class="h-screen"></div>
-        <div class="my-0 mx-auto flex flex-col justify-center items-center">
-            <h1 class="text-2xl font-bold">Create account</h1><br>
-            <button class="p-4 border-2 w-[300px] h-[50px] rounded-[30px] flex justify-left items-center">
-                <img src="assets/google.png" alt="">
-                <p class="ml-[20%]" >Register with Google</p>
-            </button><br>
-            <div>
-                <div class="flex items-center">
-                    <hr class="w-1/2">
-                    <p class="mx-2">or</p>
-                    <hr class="w-1/2"></div>
-                <br>
-                <label for="" class="relative border">
-                    <img src="../Landing-Page/assets/useer.png" alt="" class="absolute top-[1px] left-[10px]">
-                    <input type="text" placeholder="Uthman Dantata"  class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]">
-                </label>
-                 <br><br>
-                <label for="" class="relative border">
-                    <img src="../Landing-Page/assets/sms.png" alt="" class="absolute top-[1px] left-[10px]">
-                    <input type="text" placeholder="uthmandantata@mail.com" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]">
-                </label><br><br>
-                    <input type="text" placeholder="***********" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[40%]"><br><br>
-                <input type="text" placeholder="***********" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[40%]"><br><br>
-
-                <label for=""><input type="checkbox" name="" id=""> Remember Me</label><br><br>
-
-                <button class="border w-[300px] h-[50px] rounded-[30px] bg-[#0085FF] text-white font-bold"><a href="../index.html">Sign Up</a></button>
-                    
-            
+      <div><img src="../Landing-Page/assets/Frame 4.png" alt="" class="h-screen" /></div>
+      <div class="my-0 mx-auto flex flex-col justify-center items-center">
+        <h1 class="text-2xl mb-3 font-bold">Welcome Back</h1>
+        <div>
+          <button class="p-4 mb-3 border-2 w-[300px] h-[50px] rounded-[30px] flex justify-left items-center">
+            <img src="../Landing-Page/assets/google.png" alt="" />
+            <p class="ml-[20%]">Sign Up with Google</p>
+          </button>
+          <div class="flex items-center">
+            <hr class="w-1/2" />
+            <p class="mx-2">or</p>
+            <hr class="w-1/2" />
+          </div>
+          <br />
+          <form action="">
+            <div class="mb-4">
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <i class="fas fa-envelope text-gray-400"></i>
+                  <img src="../Landing-Page/assets/useer.png" alt="" />
+                </span>
+                <!-- <input type="email" id="email" name="email" class="w-full py-2 pl-10 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter your email" /> -->
+                <input type="text" placeholder="Uthman Dantata" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]" />
+              </div>
             </div>
+            <div class="mb-4">
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <i class="fas fa-envelope text-gray-400"></i>
+                  <img src="../Landing-Page/assets/useer.png" alt="" />
+                </span>
+                <!-- <input type="email" id="email" name="email" class="w-full py-2 pl-10 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter your email" /> -->
+                <input type="text" placeholder="uthmandantata@mail.com" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]" />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <img src="../Landing-Page/assets/lock.png" alt="" />
+                </span>
+                <!-- <input type="email" id="email" name="email" class="w-full py-2 pl-10 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter your email" /> -->
+                <input type="text" placeholder="***********" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <img src="../Landing-Page/assets/lock.png" alt="" />
+                </span>
+                <!-- <input type="email" id="email" name="email" class="w-full py-2 pl-10 border rounded focus:outline-none focus:border-blue-500" placeholder="Enter your email" /> -->
+                <input type="text" placeholder="***********" class="border-2 w-[300px] h-[50px] rounded-[30px] px-[20%]" />
+              </div>
+            </div>
+          </form>
+          <div>
+            <label for=""><input type="checkbox" name="" id="" /> Remember Me</label>
+            <a href="" class="ml-20 underline cursor-pointer">Forget password</a>
+          </div>
+
+          <a href="../index.html"><button class="border mt-5 w-[300px] h-[50px] rounded-[30px] bg-[#0085FF] text-white font-bold">Sign Up</button></a>
+          <div class="mt-5">
+            <a href="login.html" class="underline cursor-pointer text-blue-600">Already Have an Account? Log In</a>
+          </div>
         </div>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>

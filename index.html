@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedEase</title>
-    <link rel="shortcut icon" href="Landing-Page/assets/remove-bg.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .no-scrollbar::-webkit-scrollbar {
@@ -12,24 +11,20 @@
         }
     </style>
 </head>
-<body class="h-full">
-    <header class="flex justify-between items-center px-[50px] p-2 border-b-2">
-        <img src="Landing-Page/assets/remove-bg.png" alt="" class="w-[100px]">
-        <nav class="w-[70%] text-2xl">
-            <ul class="flex justify-around">
-                <li class="text-[#0085FF] underline"><a href="#">Home</a></li>
-                <li><a href="https://med-ease-about-page.vercel.app/">About Us</a></li>
-                <li><a href="./Contact/contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div>
-            <button class="w-[120px] h-[60px] rounded-[5px] text-xl text-white bg-[#0085FF]"><a href="./Files/login.html">Login</a></button>
+<body class="h-full bg-gray-100">
+    <nav class="flex justify-around items-center py-4 bg-white sticky top-0">
+        <img src="Contact/logo.png" alt="logo" class="w-18 h-16">
+        <div class="flex justify-between items-center">
+            <a class="px-3 hover:text-black-300  text-2xl text-blue-600" href="#home">Home</a>
+            <a class="px-3 hover:text-blue-600  text-2xl text-black-300" href="https://med-ease-about-page.vercel.app/">About</a>
+            <a class="px-3 hover:text-blue-600 text-2xl  text-black-300" href="Contact/contact.html">Contact</a>
         </div>
-    </header>
+        <a href="Files/login.html"><button type="submit" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-medium py-3 w-32 text-2xl rounded-lg shadow-lee">Login</button></a>
+    </nav>
 
-    <section class="flex justify-between items-center w-[95%] ml-20 h-full">
-        <div class="w-[45%] flex flex-col items-start">
-            <h1 class="text-3xl font-bold">
+    <section class="flex justify-between items-center w-[95%] mx-auto h-full">
+        <div class="w-[45%] flex flex-col items-start ml-5">
+            <h1 class="text-4xl font-bold">
                 Med<span class="text-red-500">Ease</span><br>
                 Your Health Care Companion
             </h1>
@@ -37,7 +32,7 @@
                 medication adherence. With MedEase, you take 
                 control of your well-being effortlessly and embark
                 on a journey of improved health management.</p>
-            <button class="text-2xl text-white bg-[#0085FF] rounded-[10px] w-[200px] h-[60px]">Learn more</button>
+            <button class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-medium py-3 w-40 text-2xl rounded-lg shadow-lee">Learn more</button>
         </div>
         <!-- <div class="w-[50%] h-full border border-red-500"> -->
             <img src="Landing-Page/assets/hero.png" alt="" class="w-[55%] h-full">
@@ -49,51 +44,137 @@
             <div class="flex items-center justify-between">
                 <p class="text-3xl font-bold">Explore Features</p>
                 <div class="w-[100px] flex justify-between items-center items-center">
-                    <ion-icon onclick="left()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-back-circle-outline"></ion-icon>
-                    <ion-icon onclick="right()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-forward-circle"></ion-icon>
+                    <ion-icon onclick="left()" class="text-[45px] text-[#0085FF] cursor-pointer active:text-black" name="arrow-back-circle-outline"></ion-icon>
+                    <ion-icon onclick="right()" class="text-[45px] text-[#0085FF] cursor-pointer active:text-black" name="arrow-forward-circle"></ion-icon>
                 </div>
             </div>
 
             <div id="features" class="h-[300px] mx-auto overflow-x-scroll no-scrollbar scroll-smooth flex items-center gap-[70px] scrollbar-hide">
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/user.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">User Profile</p>
-                    <p class="text-[18px] text-gray-500">User can view and Edit their profile</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg width="35.000000pt" height="35.000000pt" viewBox="0 0 50.000000 50.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+                        fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                        <path d="M176 475 c-56 -52 -71 -137 -37 -212 23 -50 62 -78 111 -78 49 0 88
+                        28 111 78 24 55 24 111 -2 164 -36 74 -128 99 -183 48z"/>
+                        <path d="M58 174 c-38 -20 -58 -63 -58 -124 l0 -50 250 0 250 0 0 50 c0 62
+                        -21 105 -60 125 -41 21 -56 19 -97 -12 -30 -23 -47 -28 -93 -28 -46 0 -63 5
+                        -93 28 -40 30 -60 33 -99 11z"/>
+                        </g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">User Profile</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">User can view and Edit their profile</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/add reminder.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Medication</p>
-                    <p class="text-[18px] text-gray-500">We keep your medications for you</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="42px" height="42px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g><path fill="#0085FF" class="group-hover:fill-white" d="M 23.5,-0.5 C 27.1667,-0.5 30.8333,-0.5 34.5,-0.5C 37.1667,1.5 39.5,3.83333 41.5,6.5C 41.5,10.1667 41.5,13.8333 41.5,17.5C 33.8333,25.8333 25.8333,33.8333 17.5,41.5C 13.8333,41.5 10.1667,41.5 6.5,41.5C 3.83333,39.5 1.5,37.1667 -0.5,34.5C -0.5,30.8333 -0.5,27.1667 -0.5,23.5C 7.16667,15.1667 15.1667,7.16667 23.5,-0.5 Z M 26.5,4.5 C 35.026,4.56532 37.8593,8.56532 35,16.5C 32.3333,19.1667 29.6667,21.8333 27,24.5C 22.8333,21.6667 19.3333,18.1667 16.5,14C 19.7289,10.6014 23.0622,7.43468 26.5,4.5 Z"/></g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Medication</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">We keep your medications for you</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/medication-bottle-2-64 2.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Refill Status</p>
-                    <p class="text-[18px] text-gray-500">Get notified when pills are running low</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="35.000000pt" height="35.000000pt" viewBox="0 0 42.000000 42.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,42.000000) scale(0.100000,-0.100000)"
+                        fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                        <path d="M107 413 c-10 -9 -8 -55 1 -71 6 -9 35 -12 108 -10 107 3 114 8 100
+                        64 -6 23 -9 24 -105 24 -54 0 -101 -3 -104 -7z"/>
+                        <path d="M105 301 l-30 -18 0 -139 0 -139 135 0 135 0 0 139 0 139 -30 18
+                        c-42 24 -168 24 -210 0z m125 -101 c0 -25 4 -30 25 -30 18 0 25 -5 25 -20 0
+                        -15 -7 -20 -25 -20 -21 0 -25 -5 -25 -30 0 -23 -4 -30 -20 -30 -16 0 -20 7
+                        -20 30 0 25 -4 30 -25 30 -18 0 -25 5 -25 20 0 15 7 20 25 20 21 0 25 5 25 30
+                        0 23 4 30 20 30 16 0 20 -7 20 -30z"/>
+                        </g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Refill Status</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">Get notified when pills are running low</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/heartbeat_medical_healthcare-64 2.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Health Insight</p>
-                    <p class="text-[18px] text-gray-500">Know more about your medications</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="35pt" height="35pt" viewBox="0 0 50 50" version="1.1">
+                        <path d="M 8 7.500 C 8 7.775, 8.225 8, 8.500 8 C 8.775 8, 9 7.775, 9 7.500 C 9 7.225, 8.775 7, 8.500 7 C 8.225 7, 8 7.225, 8 7.500 M 22 8.500 C 22 8.775, 22.225 9, 22.500 9 C 22.775 9, 23 8.775, 23 8.500 C 23 8.225, 22.775 8, 22.500 8 C 22.225 8, 22 8.225, 22 8.500 M 4.872 10.750 C 3.629 12.336, 3.664 12.371, 5.250 11.128 C 6.916 9.821, 7.445 9, 6.622 9 C 6.415 9, 5.627 9.787, 4.872 10.750 M 3 13.500 C 3 13.775, 3.225 14, 3.500 14 C 3.775 14, 4 13.775, 4 13.500 C 4 13.225, 3.775 13, 3.500 13 C 3.225 13, 3 13.225, 3 13.500 M 25.507 19.989 C 25.157 20.555, 25.558 20.723, 26.448 20.382 C 28.180 19.717, 28.497 19, 27.059 19 C 26.541 19, 25.843 19.445, 25.507 19.989 M 22 23.500 C 22 23.775, 22.225 24, 22.500 24 C 22.775 24, 23 23.775, 23 23.500 C 23 23.225, 22.775 23, 22.500 23 C 22.225 23, 22 23.225, 22 23.500 M 21 41.500 C 21 41.775, 21.225 42, 21.500 42 C 21.775 42, 22 41.775, 22 41.500 C 22 41.225, 21.775 41, 21.500 41 C 21.225 41, 21 41.225, 21 41.500" stroke="none" fill="#080404" fill-rule="evenodd"/><path d="M 9.487 7.059 C 5.659 9.027, 2.848 14.424, 3.188 19.153 L 3.500 23.500 10.111 23.793 C 16.657 24.082, 16.735 24.055, 17.998 21.005 C 19.551 17.257, 21.129 17.560, 22.233 21.818 C 23.238 25.697, 24.754 25.958, 25.184 22.327 C 25.602 18.791, 27.595 18.251, 28.400 21.456 C 28.905 23.470, 29.660 24, 32.019 24 C 33.659 24, 35 24.484, 35 25.076 C 35 25.726, 33.315 26.027, 30.750 25.834 C 26.716 25.532, 26.451 25.681, 25.539 28.771 C 24.515 32.243, 22.741 32.579, 22.129 29.417 C 21.925 28.363, 21.331 26.375, 20.809 25 C 19.955 22.753, 19.760 22.677, 18.880 24.250 C 18.134 25.583, 16.601 26, 12.450 26 C 9.453 26, 7 26.361, 7 26.802 C 7 28.201, 23.652 44, 25.126 44 C 25.903 44, 30.989 39.531, 36.431 34.070 C 46.178 24.285, 46.331 24.059, 46.774 18.711 C 47.184 13.768, 46.953 12.979, 44.194 9.891 C 41.390 6.752, 40.719 6.500, 35.187 6.500 C 30.898 6.500, 28.664 6.994, 27.276 8.250 C 24.894 10.406, 24.556 10.413, 22.488 8.345 C 20.527 6.385, 12.369 5.577, 9.487 7.059" stroke="none" fill="#0085FF" class="group-hover:fill-white" fill-rule="evenodd"/>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Health Insight</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">Know more about your medications</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/Alarm.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Reminders</p>
-                    <p class="text-[18px] text-gray-500">Set Customized Reminder</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="35.000000pt" height="35.000000pt" viewBox="0 0 50.000000 50.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+                        fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                        <path d="M83 431 c-28 -36 -43 -74 -43 -112 0 -24 4 -29 24 -29 19 0 25 7 30
+                        35 4 20 20 50 36 69 28 32 29 34 12 50 -25 22 -33 20 -59 -13z"/>
+                        <path d="M216 442 c-4 -11 -16 -24 -29 -31 -47 -26 -62 -61 -65 -153 -3 -70
+                        -8 -90 -23 -104 -10 -9 -19 -25 -19 -36 0 -17 11 -18 170 -18 159 0 170 1 170
+                        18 0 11 -9 27 -19 36 -15 14 -20 34 -23 104 -3 91 -21 134 -61 148 -10 3 -22
+                        17 -27 30 -12 30 -65 35 -74 6z"/>
+                        <path d="M358 443 c-16 -15 -15 -19 12 -49 16 -19 32 -49 36 -69 5 -28 11 -35
+                        30 -35 20 0 24 5 24 33 0 48 -51 137 -80 137 -3 0 -13 -8 -22 -17z"/>
+                        <path d="M200 77 c0 -33 62 -51 88 -25 26 26 13 38 -38 38 -34 0 -50 -4 -50
+                        -13z"/>
+                        </g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Reminders</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">Set Customized Reminder</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/adheherence.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Adherence Status</p>
-                    <p class="text-[18px] text-gray-500">Keep track of your medication usage</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="50pt" height="50pt" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g><path fill="#0085FF" class="group-hover:fill-white" d="M -0.5,-0.5 C 0.166667,-0.5 0.833333,-0.5 1.5,-0.5C 2.16667,0.833333 2.83333,0.833333 3.5,-0.5C 4.16667,-0.5 4.83333,-0.5 5.5,-0.5C 5.83333,0.833333 6.16667,0.833333 6.5,-0.5C 8.83333,-0.5 11.1667,-0.5 13.5,-0.5C 13.8333,0.833333 14.1667,0.833333 14.5,-0.5C 15.1667,-0.5 15.8333,-0.5 16.5,-0.5C 16.8333,0.833333 17.1667,0.833333 17.5,-0.5C 18.5,-0.5 19.5,-0.5 20.5,-0.5C 20.8333,0.833333 21.1667,0.833333 21.5,-0.5C 23.5,-0.5 25.5,-0.5 27.5,-0.5C 27.8333,0.833333 28.1667,0.833333 28.5,-0.5C 29.5,-0.5 30.5,-0.5 31.5,-0.5C 31.8333,0.833333 32.1667,0.833333 32.5,-0.5C 34.1667,-0.5 35.8333,-0.5 37.5,-0.5C 37.3284,0.491622 37.6618,1.15829 38.5,1.5C 38.5,13.5 38.5,25.5 38.5,37.5C 37.5084,37.3284 36.8417,37.6618 36.5,38.5C 35.1667,38.5 33.8333,38.5 32.5,38.5C 29.8333,37.1667 27.1667,37.1667 24.5,38.5C 22.8333,38.5 21.1667,38.5 19.5,38.5C 16.8333,37.1667 14.1667,37.1667 11.5,38.5C 10.1667,38.5 8.83333,38.5 7.5,38.5C 5.0521,37.5269 2.38544,37.1936 -0.5,37.5C -0.5,24.8333 -0.5,12.1667 -0.5,-0.5 Z M 4.5,4.5 C 4.5,4.83333 4.5,5.16667 4.5,5.5C 3.32496,5.71901 2.32496,5.38568 1.5,4.5C 2.42463,3.43764 3.42463,3.43764 4.5,4.5 Z M 16.5,4.5 C 14.0336,5.63406 11.367,5.80073 8.5,5C 9,4.5 9.5,4 10,3.5C 12.1163,3.42909 14.2829,3.76242 16.5,4.5 Z M 23.5,3.5 C 25.3715,4.35888 27.0382,4.69221 28.5,4.5C 25.8938,5.65173 23.2272,5.8184 20.5,5C 21.7375,4.76791 22.7375,4.26791 23.5,3.5 Z M 32.5,4.5 C 33.9669,3.7084 35.3002,3.7084 36.5,4.5C 35.0416,5.78202 33.7082,5.78202 32.5,4.5 Z M 4.5,11.5 C 9.83333,12.5 9.83333,13.5 4.5,14.5C 4.5,13.5 4.5,12.5 4.5,11.5 Z M 13.5,11.5 C 14.5,11.5 15.5,11.5 16.5,11.5C 16.5,12.5 16.5,13.5 16.5,14.5C 13.4331,14.8795 12.4331,13.8795 13.5,11.5 Z M 30.5,11.5 C 34.1021,11.678 34.1021,12.678 30.5,14.5C 29.4376,13.5754 29.4376,12.5754 30.5,11.5 Z M 4.5,20.5 C 9.83333,21.5 9.83333,22.5 4.5,23.5C 4.5,22.5 4.5,21.5 4.5,20.5 Z M 24.5,20.5 C 23.8333,21.5 23.1667,22.5 22.5,23.5C 21.596,22.791 21.2627,21.791 21.5,20.5C 22.5,20.5 23.5,20.5 24.5,20.5 Z M 33.5,25.5 C 33.1667,25.5 32.8333,25.5 32.5,25.5C 32.5299,24.5028 32.0299,23.8361 31,23.5C 29.4411,24.0294 27.9411,24.696 26.5,25.5C 25.537,25.0302 25.537,24.3635 26.5,23.5C 27.3382,23.1583 27.6716,22.4916 27.5,21.5C 29.4352,20.8505 31.4352,20.5172 33.5,20.5C 33.5,22.1667 33.5,23.8333 33.5,25.5 Z M 30.5,27.5 C 29.3065,28.2719 28.3065,29.2719 27.5,30.5C 25.6208,31.3414 23.6208,31.6747 21.5,31.5C 21.5,30.1667 21.5,28.8333 21.5,27.5C 23.143,27.4802 24.4763,28.1468 25.5,29.5C 26.914,28.376 28.414,27.376 30,26.5C 30.3988,26.7284 30.5654,27.0618 30.5,27.5 Z M 13.5,28.5 C 17.1021,28.678 17.1021,29.678 13.5,31.5C 12.4376,30.5754 12.4376,29.5754 13.5,28.5 Z M 32.5,29.5 C 33.0431,29.56 33.3764,29.8933 33.5,30.5C 32.7435,31.7733 32.0768,31.7733 31.5,30.5C 32.1667,30.5 32.5,30.1667 32.5,29.5 Z"/></g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Adherence Status</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">Keep track of your medication usage</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/alarm_beacon_emergency_help_light-64 2.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Emergency</p>
-                    <p class="text-[18px] text-gray-500">For Emergency purposes</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="35.000000pt" height="35.000000pt" viewBox="0 0 50.000000 50.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+                        fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                        <path d="M229 473 c0 -15 -2 -40 -3 -55 -1 -23 2 -28 21 -28 16 0 23 6 24 20
+                        4 82 3 85 -19 88 -18 3 -22 -2 -23 -25z"/>
+                        <path d="M31 426 c-10 -11 -4 -23 28 -58 23 -23 41 -47 41 -52 0 -5 11 1 24
+                        13 l24 23 -36 31 c-20 18 -41 38 -45 44 -10 17 -22 16 -36 -1z"/>
+                        <path d="M399 394 c-41 -42 -42 -45 -26 -61 16 -16 20 -15 62 27 50 50 53 55
+                        27 69 -15 8 -27 2 -63 -35z"/>
+                        <path d="M190 341 c-8 -6 -17 -8 -20 -6 -4 2 -24 -14 -46 -37 -37 -40 -38 -43
+                        -40 -117 -1 -42 -4 -83 -5 -91 -3 -12 17 -16 121 -21 l125 -5 -140 -1 c-77 -1
+                        -148 -4 -157 -8 -19 -7 -31 -32 -22 -46 3 -5 112 -9 245 -9 205 0 240 2 245
+                        15 11 28 -16 45 -75 46 -31 1 -44 4 -30 6 21 3 28 11 31 33 3 17 0 27 -6 23
+                        -6 -4 -6 1 -1 13 4 10 6 30 5 44 -2 14 -4 40 -4 58 -1 21 -5 31 -13 27 -7 -2
+                        -13 0 -13 6 0 18 -61 67 -92 73 -44 9 -91 7 -108 -3z m60 -41 c0 -5 -12 -10
+                        -27 -9 -25 0 -26 1 -8 9 27 12 35 12 35 0z m-70 -23 c0 -2 -10 -12 -22 -23
+                        l-23 -19 19 23 c18 21 26 27 26 19z m-43 -79 c-3 -8 -6 -5 -6 6 -1 11 2 17 5
+                        13 3 -3 4 -12 1 -19z m220 -134 c-3 -3 -12 -4 -19 -1 -8 3 -5 6 6 6 11 1 17
+                        -2 13 -5z"/>
+                        </g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Emergency</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">For Emergency purposes</p>
                 </div>
-                <div class="flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
-                    <img src="Landing-Page/assets/ic_settings_48px-64 2.png" alt="" class="w-[40px]">
-                    <p class="text-2xl font-bold">Settings</p>
-                    <p class="text-[18px] text-gray-500">Customize your profile</p>
+                <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] flex flex-col justify-between p-5 min-w-[250px] h-[200px] rounded-[20px] border shadow-md bg-white">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="35.000000pt" height="35.000000pt" viewBox="0 0 56.000000 56.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,56.000000) scale(0.100000,-0.100000)"
+                        fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                        <path d="M210 485 c0 -28 -5 -38 -25 -47 -19 -9 -28 -9 -37 0 -26 26 -53 13
+                        -76 -33 -28 -58 -28 -63 5 -97 l27 -28 -27 -28 c-33 -34 -33 -39 -5 -97 23
+                        -46 50 -59 76 -33 9 9 18 9 37 0 20 -9 25 -19 25 -47 l0 -35 70 0 70 0 0 35
+                        c0 28 5 38 25 47 19 9 28 9 37 0 26 -26 55 -13 77 33 27 57 26 63 -6 97 l-27
+                        28 27 28 c32 34 33 40 6 97 -22 46 -51 59 -77 33 -9 -9 -18 -9 -37 0 -20 9
+                        -25 19 -25 47 l0 35 -70 0 -70 0 0 -35z m120 -155 c43 -43 11 -120 -50 -120
+                        -38 0 -70 32 -70 70 0 17 9 39 20 50 11 11 33 20 50 20 17 0 39 -9 50 -20z"/>
+                        </g>
+                    </svg>
+                    <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Settings</p>
+                    <p class="text-[18px] text-gray-500 group-hover:text-white">Customize your profile</p>
                 </div>
             </div>
 
@@ -103,26 +184,88 @@
                 </div>
                 
                 <div class="w-[40%] h-[450px] flex flex-col justify-between">
-                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
-                        <img src="Landing-Page/assets/mission_1628441 2.png" alt="" class="w-[50px] h-[50px]">
+                    <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="50.000000pt" height="50.000000pt" viewBox="0 0 68.000000 71.000000"
+                            preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,71.000000) scale(0.100000,-0.100000)"
+                            fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                            <path d="M245 703 c-86 -21 -169 -88 -213 -171 -31 -57 -32 -65 -32 -172 0
+                            -97 3 -119 23 -159 29 -60 100 -131 162 -161 44 -22 63 -25 155 -25 87 0 113
+                            4 150 22 68 33 123 85 158 151 31 57 32 65 32 176 0 106 -2 116 -19 116 -17 0
+                            -18 -9 -17 -102 1 -93 -2 -108 -26 -154 -30 -57 -87 -113 -150 -146 -62 -32
+                            -194 -32 -258 1 -61 31 -116 86 -148 146 -22 43 -26 63 -26 135 0 72 4 93 26
+                            136 31 60 93 118 157 148 38 17 63 21 144 20 86 -2 97 0 97 16 0 12 -10 20
+                            -31 24 -36 7 -154 6 -184 -1z"/>
+                            <path d="M497 622 c-47 -48 -57 -63 -57 -93 0 -29 -9 -44 -60 -94 -33 -33 -60
+                            -67 -60 -77 0 -34 35 -18 95 42 50 51 65 60 95 60 30 0 45 9 94 59 64 65 69
+                            91 17 91 -26 0 -30 4 -33 32 -5 50 -27 45 -91 -20z m72 -59 c10 -7 -44 -53
+                            -61 -53 -25 0 -23 28 4 57 17 19 24 21 37 11 9 -7 18 -14 20 -15z"/>
+                            <path d="M257 596 c-117 -43 -185 -162 -160 -281 42 -196 279 -270 418 -130
+                            49 49 78 116 73 171 -2 31 -7 39 -23 39 -17 0 -21 -9 -26 -58 -22 -204 -304
+                            -244 -384 -55 -51 124 29 263 162 277 49 5 58 9 58 26 0 16 -7 20 -40 22 -22
+                            2 -57 -4 -78 -11z"/>
+                            <path d="M305 503 c-61 -16 -105 -76 -105 -145 0 -81 58 -138 140 -138 75 0
+                            137 52 142 121 3 29 -1 34 -19 37 -19 3 -23 -1 -23 -23 0 -18 -13 -40 -35 -62
+                            -31 -31 -40 -35 -72 -30 -47 8 -82 43 -90 90 -5 32 -1 41 30 72 22 22 44 35
+                            62 35 22 0 26 4 23 22 -3 24 -19 30 -53 21z"/>
+                            </g>
+                        </svg>
                         <div class="ml-[25px]">
-                            <p class="text-2xl font-bold">Our Mission</p>
-                            <p class="text-gray-500 text-xl mt-2">Empowering Medication Management for healthier lives.</p>
+                            <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Our Mission</p>
+                            <p class="text-gray-500 text-xl mt-2 group-hover:text-white">Empowering Medication Management for healthier lives.</p>
                         </div>
                     </div>
-                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
-                        <img src="Landing-Page/assets/teamwork_8779197 1.png" alt="" class="w-[50px] h-[50px]">
+                    <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="50.000000pt" height="50.000000pt" viewBox="0 0 80.000000 80.000000"
+                            preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
+                            fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                            <path d="M333 660 c-85 -51 -81 -179 6 -225 116 -60 239 71 171 182 -37 61
+                            -116 81 -177 43z"/>
+                            <path d="M120 478 c-47 -50 -9 -128 62 -128 28 0 42 7 57 26 27 34 27 64 0 98
+                            -27 34 -88 37 -119 4z"/>
+                            <path d="M567 482 c-23 -26 -22 -94 1 -115 23 -21 81 -22 110 -1 27 18 30 78
+                            6 112 -20 29 -93 31 -117 4z"/>
+                            <path d="M315 365 c-77 -27 -154 -142 -143 -216 l3 -24 223 -3 c250 -3 239 -6
+                            227 73 -19 130 -177 217 -310 170z"/>
+                            <path d="M130 313 c-57 -22 -110 -94 -110 -152 0 -33 14 -41 69 -41 l38 0 6
+                            54 c3 29 15 72 26 94 12 23 21 44 21 47 0 6 -30 5 -50 -2z"/>
+                            <path d="M620 318 c0 -2 11 -30 25 -63 13 -33 25 -77 25 -97 l0 -38 50 0 c59
+                            0 71 15 58 72 -12 54 -35 84 -84 108 -34 17 -74 26 -74 18z"/>
+                            </g>
+                        </svg>
                         <div class="ml-[25px]">
-                            <p class="text-2xl font-bold">Who We Are</p>
-                            <p class="text-gray-500 text-xl mt-2">We’re your partner in achieving seamless health management.</p>
+                            <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Who We Are</p>
+                            <p class="text-gray-500 text-xl mt-2 group-hover:text-white">We’re your partner in achieving seamless health management.</p>
                         </div>
                         
                     </div>
-                    <div class="bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
-                        <img src="Landing-Page/assets/Vector.png" alt="" class="w-[50px] h-[50px]">
+                    <div class="transition-all duration-150 ease-in group hover:bg-[#0085FF] bg-white flex justify-between items-start rounded-[10px] w-[100%] h-[120px] p-4">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="50.000000pt" height="50.000000pt" viewBox="0 0 75.000000 55.000000"
+                            preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,55.000000) scale(0.100000,-0.100000)"
+                            fill="#0085FF" class="group-hover:fill-white" stroke="none">
+                            <path d="M251 535 c-91 -29 -182 -109 -230 -202 -27 -54 -26 -63 5 -125 34
+                            -67 105 -135 180 -173 55 -28 67 -30 169 -30 101 0 115 2 168 28 70 35 149
+                            111 182 177 31 61 31 69 -1 132 -34 67 -106 136 -180 172 -51 26 -72 30 -154
+                            33 -63 2 -110 -2 -139 -12z m255 -93 c58 -30 103 -70 135 -121 l29 -44 -23
+                            -40 c-27 -47 -81 -98 -139 -129 -61 -33 -204 -33 -264 -1 -59 32 -103 71 -135
+                            122 -26 41 -27 45 -13 72 34 67 104 126 183 156 53 20 175 12 227 -15z"/>
+                            <path d="M290 418 c-45 -31 -70 -82 -70 -143 0 -99 62 -165 155 -165 93 0 155
+                            66 155 165 0 99 -62 165 -155 165 -38 0 -61 -6 -85 -22z m141 -77 c21 -22 29
+                            -39 29 -66 0 -45 -45 -95 -85 -95 -40 0 -85 50 -85 95 0 45 45 95 85 95 16 0
+                            38 -12 56 -29z"/>
+                            </g>
+                        </svg>
                         <div class="ml-[25px]">
-                            <p class="text-2xl font-bold">Our Vision</p>
-                            <p class="text-gray-500 text-xl mt-2">Innovate  Medication Management for healthier lives.</p>
+                            <p class="text-2xl font-bold text-[#0085FF] group-hover:text-white">Our Vision</p>
+                            <p class="text-gray-500 text-xl mt-2 group-hover:text-white">Innovate  Medication Management for healthier lives.</p>
                         </div>
                         
                     </div>
@@ -137,7 +280,7 @@
                 Smooth Service and effortless medication management.
             </h1>
             <p class="text-2xl text-gray-500 my-[30px]">Discover our medication management app for a seamless experience. Effortlessly organize, track, and receive prescriptions. Simplify your health journey with smooth service and easy medication management.</p>
-            <button class="text-2xl text-white bg-[#0085FF] rounded-[10px] w-[200px] h-[60px]">Learn more</button>
+            <button class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-medium py-3 w-40 text-2xl rounded-lg shadow-lee">Learn more</button>
         </div>
         <div class="w-[40%] h-[400px] relative">
             <img src="Landing-Page/assets/docpatient.png" alt="" class="absolute bottom-0 w-1/2 h-[60%]">
@@ -151,8 +294,8 @@
             <div class="flex items-center justify-between">
                 <p class="text-3xl font-bold">Follow the latest articles & news</p>
                 <div class="w-[100px] flex justify-between items-center items-center">
-                    <ion-icon onclick="slideLeft()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-back-circle-outline"></ion-icon>
-                    <ion-icon onclick="slideRight()" class="text-[45px] text-[#0085FF] cursor-pointer" name="arrow-forward-circle"></ion-icon>
+                    <ion-icon onclick="slideLeft()" class="text-[45px] text-[#0085FF] cursor-pointer active:text-black" name="arrow-back-circle-outline"></ion-icon>
+                    <ion-icon onclick="slideRight()" class="text-[45px] text-[#0085FF] cursor-pointer active:text-black" name="arrow-forward-circle"></ion-icon>
                 </div>
             </div>
 
@@ -161,11 +304,11 @@
                     <img src="Landing-Page/assets/hands.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -173,11 +316,11 @@
                     <img src="Landing-Page/assets/capsules.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -185,11 +328,11 @@
                     <img src="Landing-Page/assets/apple.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -197,59 +340,35 @@
                     <img src="Landing-Page/assets/hands.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
-                    <img src="Landing-Page/assets/hands.png" alt="">
+                    <img src="Landing-Page/assets/capsules.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
-                    <img src="Landing-Page/assets/hands.png" alt="">
+                    <img src="Landing-Page/assets/apple.png" alt="">
                     <div class="p-4 flex flex-col justify-between h-full">
                         <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
+                        <p class="text-3xl font-bold text-[#0085FF]">You have no excuse to miss your dose</p>
                         <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
                         <div class="flex items-center">
                             <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
-                    <img src="Landing-Page/assets/hands.png" alt="">
-                    <div class="p-4 flex flex-col justify-between h-full">
-                        <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
-                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
-                        <div class="flex items-center">
-                            <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col min-w-[350px] h-[550px] rounded-[30px] border shadow-md">
-                    <img src="Landing-Page/assets/hands.png" alt="">
-                    <div class="p-4 flex flex-col justify-between h-full">
-                        <p class="text-[#0085FF]">7 June, 2023</p>
-                        <p class="text-3xl font-bold">You have no excuse to miss your dose</p>
-                        <p class="text-gray-500">More than 80% of patients occasionally miss a dose of their medication. Health practitioners...</p>
-                        <div class="flex items-center">
-                            <p class="text-[#0085FF]">READ MORE</p>
-                            <ion-icon class="text-[45px] text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
+                            <ion-icon class="text-[30px] ml-2 text-[#0085FF]" name="arrow-forward-circle"></ion-icon>
                         </div>
                     </div>
                 </div>
