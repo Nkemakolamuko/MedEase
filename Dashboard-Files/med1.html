@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/098c2dda99.js" crossorigin="anonymous"></script> -->
+    <title>Add Medication</title>
+    <link rel="shortcut icon" href="../Landing-Page/assets/logo.png" type="image/x-icon">
+  </head>
+  <body class="font-[inter] h-screen">
+    <nav class="bg-[#0085ff] py-6 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="font-bold text-white text-4xl flex gap-4 items-center justify-center">
+          <div><span>Med</span><span class="text-red-500">Ease</span></div>
+        </h1>
+        <div class="flex justify-between gap-4 items-center">
+          <img
+            src="../Landing-Page/assets/Nkem.jpg"
+            alt="Nkem"
+            class="rounded-full w-14 h-14"
+          />
+          <p class="text-xl text-white">Nkemakolamuko</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main flex flex-row bg-gray-100 text-gray-800">
+      <aside
+        class="sidebar w-76 -translate-x-full transform bg-white p-4 transition-transform duration-150 ease-in md:translate-x-0 md:shadow-md"
+      >
+        <a
+          href="dashboard.html"
+          class="flex py-3 gap-8 items-center rounded-lg mt-3 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="person"
+              class="text-center text-gray-800 text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              User Profile
+            </h3></span
+          ></a
+        >
+
+        <a href="#" class=" bg-[#0085ff] hover:bg-blue-500 flex py-3 gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon name="create" class="text-center text-3xl text-white"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-white font-semibold">
+              Medication
+            </h3></span
+          ></a
+        >
+        
+        <a href="https://med-ease-refill-status.vercel.app/" class="flex gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon name="add-circle" class="text-center text-3xl"></ion-icon
+          ></span>
+          
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Refill Status
+            </h3></span
+          ></a
+        >
+
+        <a href="healthinsight.html" class="flex gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon name="medkit" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Health Insights
+            </h3></span
+          ></a
+        >
+
+        <a href="reminder.html" class="flex gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon
+              name="notifications"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Reminders
+            </h3></span
+          ></a
+        >
+
+        <a href="#" class="flex gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon name="time" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Adherence Status
+            </h3></span
+          ></a
+        >
+
+        <a href="emergency.html" class="flex gap-8 items-center mt-5 pl-8">
+          <span
+            ><ion-icon name="alert" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Emergency Contact
+            </h3></span
+          ></a
+        >
+
+        <a href="settings.html" class="flex gap-8 items-center rounded-lg mt-5 pl-8">
+          <span
+            ><ion-icon name="settings" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">Settings</h3></span
+          ></a
+        >
+      </aside>
+
+      <main
+        class="-ml-48 flex flex-grow flex-col items-center justify-center transition-all duration-150 ease-in md:ml-0"
+      >
+        <div class="mt-4"><img src="../Landing-Page/assets/circle-dot-regular.svg" alt="circle-dot-regular" class="w-[30px] h-[30px]"></div>
+        <div class="flex flex-col gap-8 w-[900px] h-auto items-center justify-center bg-white text-center rounded-[30px] mt-4 mb-8">
+       
+          <div>
+            <h3 class="text-center text-[24px] mt-2">Scan QR code or Bar code to save medicine</h3>
+            <div class="w-[800px] rounded-[30px] bg-[#0085FF] flex items-center justify-center py-8 mt-4"><img src="../Landing-Page/assets/BarCode.png" alt="BarCode" class="w-[600px]"></div>
+            <div class="text-[24px] mt-8">Click to add medicine</div>
+            <!-- <div>
+              <a href="med2.html"><button class="text-[20px] py-4 px-8 bg-[#0085FF] rounded-[10px] text-white mb-4 mt-2">Add</button></a>
+            </div> -->
+            <div class="flex text-center justify-center items-center mt-6">
+              <a href="med2.html"> <button type="submit" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-bold py-2 px-6 text-xl rounded-md shadow-lee" id="btn">Add</button> </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+ 

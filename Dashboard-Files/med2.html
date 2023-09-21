@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../Landing-Page/assets/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="bg-[#0085ff] py-6 sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="font-bold text-white text-4xl">
+          Med<span class="text-red-500">Ease</span>
+        </h1>
+        <div class="flex justify-between gap-4 items-center">
+          <img src="../Landing-Page/assets/Nkem.jpg" alt="Nkem" class="rounded-full w-14 h-14" />
+          <p class="text-xl text-white">Nkemakolamuko</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex min-h-screen flex-row bg-gray-100 text-gray-800">
+      <aside
+        class="sidebar w-76 -translate-x-full transform bg-white p-4 transition-transform duration-150 ease-in md:translate-x-0 md:shadow-md"
+      >
+        <a
+          href="dashboard.html"
+          class="flex gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="person"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              User Profile
+            </h3></span
+          ></a
+        >
+
+        <a href="#" class="bg-[#0085ff] flex py-3 gap-8 items-center rounded-lg mt-8 pl-8 hover:bg-blue-500">
+          <span><ion-icon name="create" class="text-center text-white text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-white font-semibold">
+              Medication
+            </h3></span
+          ></a
+        >
+
+        <a href="https://med-ease-refill-status.vercel.app/" class="flex gap-8 items-center rounded-lg mt-8 pl-8">
+          <span
+            ><ion-icon name="add-circle" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Refill Status
+            </h3></span
+          ></a
+        >
+
+        <a href="healthinsight.html" class="flex gap-8 items-center rounded-lg mt-8 pl-8">
+          <span
+            ><ion-icon name="medkit" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Health Insights
+            </h3></span
+          ></a
+        >
+
+        <a href="reminder.html" class="flex gap-8 items-center rounded-lg mt-8 pl-8">
+          <span
+            ><ion-icon
+              name="notifications"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Reminders
+            </h3></span
+          ></a
+        >
+
+        <a href="#" class="flex gap-8 items-center rounded-lg mt-8 pl-8">
+          <span
+            ><ion-icon name="time" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Adherence Status
+            </h3></span
+          ></a
+        >
+
+        <a href="emergency.html" class="flex gap-8 items-center mt-8 pl-8">
+          <span
+            ><ion-icon name="alert-circle-outline" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Emergency Contact
+            </h3></span
+          ></a
+        >
+
+        <a href="settings.html" class="flex gap-8 items-center rounded-lg mt-8 pl-8">
+          <span
+            ><ion-icon name="settings" class="text-center text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">Settings</h3></span
+          ></a
+        >
+      </aside>
+
+      <main
+        class="main -ml-48 flex flex-grow bg-gray-100 flex-col transition-all duration-150 ease-in md:ml-0" id="medication"
+      >
+        <div
+          class="flex h-full mt-16 justify-center text-2xl font-medium shadow-md"
+        >
+          <div>
+            <div>
+              <input id="input-field"
+                type="text"
+                class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.8rem] leading-[1.6] outline-double transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-100 focus:ring-2 focus:ring-blue-500"
+                id="exampleInput125"
+                placeholder="Medication Name"
+              />
+            </div>
+            <div>
+              <div class="mt-14">
+                <div
+                  class="block max-w-4xl rounded-lg bg-white py-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 w-screen"
+                >
+                  <span class="text-1xl font-medium p-6"
+                    >Medication Schedule</span
+                  >
+                  <br />
+                  <br />
+                  <hr />
+
+                  <div class="flex flex-col">
+                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                          <table class="min-w-full text-left text-sm font-light text-xl">
+                            <thead
+                              class="border-b bg-white font-medium dark:border-neutral-500 dark:bg-neutral-600">
+                              <tr>
+                                <th scope="col" class="px-6 py-4">#</th>
+                                <th scope="col" class="px-6 py-4">Paracetamol</th>
+                                <th scope="col" class="px-6 py-4">Dosage</th>
+                                <th scope="col" class="px-6 py-4"></th>
+                              </tr>
+                            </thead>
+                            <tbody id="table-data">
+                              <tr 
+                                class="border-b bg-neutral-100 dark:border-neutral-500 dark:bg-neutral-700">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium">#</td>
+                                <td class="whitespace-nowrap px-6 py-4">After Breakfast</td>
+                                <td class="whitespace-nowrap px-6 py-4">1 x 2</td>
+                                <td class="whitespace-nowrap px-6 py-4"><span
+                                  ><ion-icon name="trash-bin" class="text-center text-[#0085ff] text-3xl cursor-pointer"></ion-icon></span></td>
+                              </tr>
+                              <tr
+                                class="border-b bg-white dark:border-neutral-500 dark:bg-neutral-600">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium">#</td>
+                                <td class="whitespace-nowrap px-6 py-4">After Lunch</td>
+                                <td class="whitespace-nowrap px-6 py-4">2 x 3</td>
+                                <td class="whitespace-nowrap px-6 py-4"><span
+                                  ><ion-icon name="trash-bin" class="text-center text-[#0085ff] text-3xl cursor-pointer"></ion-icon></span>
+                                </td>
+                              </tr>
+
+                              <tr
+                                class="border-b bg-white dark:border-neutral-500 dark:bg-neutral-600">
+                                <td class="whitespace-nowrap px-6 py-4 font-medium">#</td>
+                                <td class="whitespace-nowrap px-6 py-4">After Dinner</td>
+                                <td class="whitespace-nowrap px-6 py-4">3 x 1</td>
+                                <td class="whitespace-nowrap px-6 py-4"><span
+                                  ><ion-icon name="trash-bin" class="text-center text-[#0085ff] text-3xl cursor-pointer"></ion-icon></span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <div class="flex text-center justify-center items-center mt-6">
+                            <button type="button" class="bg-blue-500 hover:bg-blue-900 inline-block text-white font-bold py-2 px-6 text-xl rounded-md shadow-lee" id="add-button">Add</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+            // Step 1: Select the "Add" button element by its id
+      const addButton = document.getElementById('add-button');
+
+      // Step 2: Add a click event listener to the button
+      addButton.addEventListener('click', function() {
+        // Step 3: Retrieve the input value
+        const inputValue = document.getElementById('input-field').value;
+
+        console.log(inputValue)
+
+        // Check if the input value is not empty
+        if (inputValue.trim() !== '') {
+          // Create a new table row
+          const newRow = document.createElement('tr');
+
+          // Create the <td> elements for the row
+          const cell1 = document.createElement('td');
+          cell1.textContent = '#'; // You can set the content for this cell as needed.
+          cell1.classList.add('pl-6');
+
+          const cell2 = document.createElement('td');
+          cell2.textContent = inputValue; // Set the input value as the content.
+          cell2.classList.add('pl-6');
+
+          const cell3 = document.createElement('td');
+          cell3.textContent = '1 x 3'; // You can set the content for this cell as needed.
+          cell4.classList.add('pl-6');
+
+          const cell4 = document.createElement('td');
+          cell4.classList.add('pl-6');
+          
+          // Create the delete button (trash bin icon)
+          const deleteButton = document.createElement('button');
+          deleteButton.innerHTML = '<ion-icon name="trash-bin" class="text-center text-[#0085ff] text-3xl cursor-pointer"></ion-icon>';
+          deleteButton.addEventListener('click', function() {
+            // Handle the delete functionality here.
+            // Remove the corresponding row from the table.
+            newRow.remove();
+          });
+          cell4.appendChild(deleteButton);
+
+          // Append the <td> elements to the row
+          newRow.appendChild(cell1);
+          newRow.appendChild(cell2);
+          newRow.appendChild(cell3);
+          newRow.appendChild(cell4);
+
+          // Step 4: Append the new row to the table's <tbody>
+          const tableData = document.getElementById('table-data');
+          tableData.appendChild(newRow);
+
+          // Clear the input field after adding the value
+          document.getElementById('input-field').value = '';
+        }
+      });
+
+
+      
+    </script>
+  </body>
+</html>
