@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.js"></script>
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Adherence</title>
+    <style>
+      /* Calendar styles */
+        .calendar {
+            max-width: 320px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        .calendar-month {
+            text-transform: uppercase;
+        }
+
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .calendar-table th, .calendar-table td {
+            text-align: center;
+            padding: 12px;
+        }
+
+        .calendar-table th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .calendar-table td {
+            cursor: pointer;
+        }
+
+        /* Style for checked (blue) dates */
+        .calendar-day.checked {
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+        }
+
+        /* Style for unchecked (white) dates */
+        .calendar-day.unchecked {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-[#0085ff] py-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="font-bold text-white text-4xl">
+          Med<span class="text-red-500">Ease</span>
+        </h1>
+        <div class="flex justify-between gap-4 items-center">
+          <img src="Nkem.jpg" alt="Nkem" class="rounded-full w-14 h-14" />
+          <p class="text-xl text-white">Nkemakolamuko</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex min-h-screen flex-row bg-gray-100 text-gray-800">
+      <aside
+        class="sidebar w-76 -translate-x-full transform bg-white p-4 transition-transform duration-150 ease-in md:translate-x-0 md:shadow-md"
+      >
+        <a
+          href="#"
+          class="flex  gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="person"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              User Profile
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="Add-Medication/add_medication.html"
+          class="flex gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="create"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Medication
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="MedEase-refill-status/MedEsae-refill-status/index.html"
+          class="flex gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="add-circle"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Refill Status
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="#"
+          class="flex gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="medkit"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Health Insights
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="reminder1/reminder/reminder.html"
+          class="flex  gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="notifications"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Reminders
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="adherence.html"
+          class="bg-[#0085ff] flex py-3 gap-8 items-center rounded-lg mt-8 pl-8 hover:bg-blue-500"
+        >
+          <span
+            ><ion-icon name="time" class="text-center text-white text-3xl"></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-white text-gray-800 font-semibold">
+              Adherence Status
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="Med grsce/MedEase/emergency.html"
+          class="flex gap-8 items-center mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="alert"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Emergency Contact
+            </h3></span
+          ></a
+        >
+
+        <a
+          href="adejoke/medease/dashboard.html"
+          class="flex gap-8 items-center rounded-lg mt-8 pl-8"
+        >
+          <span
+            ><ion-icon
+              name="settings"
+              class="text-center text-3xl"
+            ></ion-icon
+          ></span>
+          <span
+            ><h3 class="text-xl text-gray-800 font-semibold">
+              Settings
+            </h3></span
+          ></a
+        >
+        
+      </aside>
+
+
+      
+
+      <main
+        class="main -ml-48 flex flex-grow flex-col transition-all duration-150 ease-in md:ml-0"
+      >
+        <div class=" ">
+         <div class="grid grid-cols-2 gap-4 ">
+            <div class="calendar container bg-white">
+                <div class="calendar-header">
+                    <button id="prevMonthBtn">←</button>
+                    <div class="calendar-month" id="currentMonthYear"></div>
+                    <button id="nextMonthBtn">→</button>
+                </div>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarDays">
+                    </tbody>
+                </table>
+            </div>
+           <div style="max-width: 400px; margin: 0 auto;" class="container bg-white">
+              <canvas id="myPieChart"></canvas>
+          </div>
+          </div>
+          <div style="max-width: 600px; margin: 0 auto;" class="container bg-white">
+              <canvas id="myBarChart"></canvas>
+          </div>
+        </div>
+      </main>
+    </div>
+  <script>
+      const calendar = document.querySelector(".calendar");
+        const currentMonthYear = document.querySelector("#currentMonthYear");
+        const calendarDays = document.querySelector("#calendarDays");
+        const prevMonthBtn = document.querySelector("#prevMonthBtn");
+        const nextMonthBtn = document.querySelector("#nextMonthBtn");
+
+        let currentDate = new Date();
+
+        function generateCalendar() {
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+            // Clear previous calendar
+            calendarDays.innerHTML = "";
+
+            // Set current month and year in the header
+            currentMonthYear.textContent = new Date(year, month).toLocaleString(undefined, { month: 'long', year: 'numeric' });
+
+            // Calculate previous month's last days
+            const daysInPrevMonth = new Date(year, month, 0).getDate();
+            const prevMonthStartDay = daysInPrevMonth - firstDayOfMonth + 1;
+
+            // Generate calendar cells
+            let dayCounter = 1;
+            for (let i = 0; i < 6; i++) {
+                const row = document.createElement("tr");
+                for (let j = 0; j < 7; j++) {
+                    const cell = document.createElement("td");
+                    if (i === 0 && j < firstDayOfMonth) {
+                        // Previous month's days
+                        cell.textContent = prevMonthStartDay + j;
+                        cell.classList.add("prev-month");
+                    } else if (dayCounter <= daysInMonth) {
+                        // Current month's days
+                        cell.textContent = dayCounter;
+                        cell.classList.add("calendar-day", "unchecked");
+                        dayCounter++;
+                    }
+                    row.appendChild(cell);
+                }
+                calendarDays.appendChild(row);
+            }
+        }
+
+        generateCalendar();
+
+        // Event listeners for navigating months
+        prevMonthBtn.addEventListener("click", () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            generateCalendar();
+        });
+
+        nextMonthBtn.addEventListener("click", () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            generateCalendar();
+        });
+
+        // Event listener for clicking on a date to toggle checked/unchecked
+        calendarDays.addEventListener("click", (e) => {
+            if (e.target.classList.contains("calendar-day")) {
+                e.target.classList.toggle("checked");
+                e.target.classList.toggle("unchecked");
+            }
+        });
+        // Data for the pie chart
+        var data = {
+            labels: ['Blue', 'Red'],
+            datasets: [{
+                data: [60, 40],
+                backgroundColor: ['blue', 'red'],
+            }]
+        };
+
+        var options = {
+            cutout: 60, // Size of the hole in the middle
+            responsive: false, // Disable responsiveness for a fixed size chart
+        };
+
+        // Create the pie chart
+        var ctx = document.getElementById('myPieChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: options,
+        });
+        // Data for the bar chart
+        var data = {
+            labels: ['Bar 1', 'Bar 2', 'Bar 3', 'Bar 4'],
+            datasets: [{
+                data: [40, 30, 50, 35],
+                backgroundColor: ['blue', 'red', 'blue', 'red'], // Blue and red colors for bars
+            }]
+        };
+
+        var options = {
+            responsive: false, // Disable responsiveness for a fixed size chart
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Create the bar chart
+        var ctx = document.getElementById('myBarChart').getContext('2d');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options,
+        });
+    </script>
+  </body>
+</html>
